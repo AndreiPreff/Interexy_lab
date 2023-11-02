@@ -17,13 +17,15 @@ function bubbleSort(arr) {
             }
         }
     }
+
+    return arr; // Возвращаем отсортированный массив
 }
 
 // Измеряем время выполнения
 const startTime = new Date().getTime();
-bubbleSort(mylst);
+const sortedArray = bubbleSort([...mylst]); // Сортируем и сохраняем отсортированный массив
 const endTime = new Date().getTime();
 
-// Выводим отсортированный массив и время выполнения
+// Выводим несколько начальных и конечных элементов отсортированного массива
 console.log(`Время выполнения bubbleSort: ${(endTime - startTime) / 1000} секунд`);
-console.log(`Отсортирован массив длиной ${mylst.length} элементов`);
+console.log(`Отсортирован массив длиной ${sortedArray.length} элементов`);
