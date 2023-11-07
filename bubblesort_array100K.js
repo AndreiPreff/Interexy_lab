@@ -27,3 +27,4 @@ const endTime = new Date().getTime();
 // Выводим несколько начальных и конечных элементов отсортированного массива
 console.log(`Время выполнения bubbleSort: ${(endTime - startTime) / 1000} секунд`);
 console.log(`Отсортирован массив длиной ${sortedArray.length} элементов`);
+console.log(sortedArray)

@@ -31,6 +31,6 @@ const startTime = new Date().getTime();
 const sortedArray = quickSort([...mylst]); // Сортируем и сохраняем отсортированный массив
 const endTime = new Date().getTime();
 
-console.log("Время выполнения: " + ((endTime - startTime) / 1000) + " секунд");
+console.log("Время выполнения quickSort: " + ((endTime - startTime) / 1000) + " секунд");
 console.log("Отсортирован список длиной " + (mylst.length) + " элементов")
 console.log(sortedArray)

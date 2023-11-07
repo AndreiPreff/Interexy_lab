@@ -44,9 +44,10 @@ function merge(left, right) {
 
 // Измеряем время выполнения
 let startTime = new Date().getTime();
-let sortedList = mergeSort(mylst);
+let sortedArray = mergeSort(mylst);
 let endTime = new Date().getTime();
 
 // Выводим время выполнения и длину отсортированного массива
 console.log(`Время выполнения mergeSort: ${(endTime - startTime) / 1000} секунд`);
-console.log(`Отсортирован массив длиной ${sortedList.length} элементов`);
+console.log(`Отсортирован массив длиной ${sortedArray.length} элементов`);
+console.log(sortedArray)
