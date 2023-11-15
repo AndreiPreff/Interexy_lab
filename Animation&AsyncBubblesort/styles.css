@@ -1,0 +1,222 @@
+/* styles.css */
+
+/* Меняем шрифт */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    font-size: 8px;
+}
+
+
+header {
+    margin-block-end: 5px; /* Отступ снизу для заголовка */
+}
+
+/* Добавление отступа между разделами */
+section {
+    margin-bottom: 3px; /* Отступ снизу для разделов */
+    display: flex; /* Использование flex-контейнера */
+    flex-direction: column; /* Столбцы - элементы flex-контейнера располагаются вертикально */
+    align-items: center; /* Выравнивание по центру по горизонтали */
+}
+
+/* Стилизация нижнего колонтитула */
+footer {    
+    display: flex; /* Используем flex-контейнер */
+    align-items: center; /* Выравнивание по центру по вертикали */
+    justify-content: center; /* Выравнивание по центру по горизонтали */
+    height: 15px; /* Замените на ваше желаемое значение */
+    /* position: fixed; */
+    /* bottom: -10px; */
+    width: 100%; /* Занимает всю ширину экрана */
+    background-color: #f1f1f1; /* Цвет фона */
+    padding: 3px; /* Внутренние отступы */
+}
+
+/* Выравнивание текста в центре для заголовка и разделов */
+header, section {
+    text-align: center; /* Выравнивание текста по центру */
+}
+
+header h1 {
+    font-size: 12px; /* Размер текста - 12 пикселей */
+    color: rgb(40, 39, 41); /* Цвет текста - серый */
+    font-weight: bold; /* Текст жирным шрифтом */
+    text-align: center; /* Выравнивание текста по центру */
+    margin: 0px 0; /* Отступы сверху и снизу между параграфами - 2 пикселя сверху и 0 снизу */
+}
+
+section h2 {
+    font-size: 10px; /* Размер текста - 12 пикселей */
+    color: rgb(75, 7, 179); /* Цвет текста - фиолетовый */
+    font-weight: bold; /* Текст жирным шрифтом */
+    display: flex; /* Элементы отображаются в строку, один под другим */
+    margin: 0px 0; /* Отступы сверху и снизу между параграфами - 2 пикселя сверху и 0 снизу */
+}
+
+section h5 {
+    font-size: 6px; /* Размер текста - 6 пикселей */
+    color: rgb(213, 51, 7); /* Цвет текста - фиолетовый */
+    font-weight: bold; /* Текст жирным шрифтом */
+    display: flex; /* Элементы отображаются в строку, один под другим */
+    margin: 0px 0; /* Отступы сверху и снизу между параграфами - 2 пикселя сверху и 0 снизу */
+}
+
+.rectangleSort {
+    width: 300px; /* Ширина прямоугольника */
+    height: 90px; /* Высота прямоугольника */
+    background-color: #d3e3e0; /* Цвет фона прямоугольника */
+    margin-top: 3px; /* Отступ сверху */
+    display: flex; /* Использование flex-контейнера для внутренних элементов */
+    justify-content: center; /* Выравнивание по центру по горизонтали внутри прямоугольника */
+    align-items: center; /* Выравнивание по центру по вертикали внутри прямоугольника */
+}
+
+.rectangleOne {
+    width: 300px; /* Ширина прямоугольника */
+    height: 45px; /* Высота прямоугольника */
+    background-color: #4694c9; /* Цвет фона прямоугольника */
+    margin-top: 3px; /* Отступ сверху */
+    display: flex; /* Использование flex-контейнера для внутренних элементов */
+    justify-content: flex-start; /* Выравнивание по центру по горизонтали внутри прямоугольника */
+    align-items: center; /* Выравнивание по центру по вертикали внутри прямоугольника */
+}
+
+.rectangleTwo {
+    width: 300px; /* Ширина прямоугольника */
+    height: 45px; /* Высота прямоугольника */
+    background-color: #9bc946; /* Цвет фона прямоугольника */
+    margin-top: 3px; /* Отступ сверху */
+    display: flex; /* Использование flex-контейнера для внутренних элементов */
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden; /* Скрываем часть squareTwo, выходящую за пределы rectangleTwo */
+}
+
+.rectangleThree {
+    width: 300px; /* Ширина прямоугольника */
+    height: 45px; /* Высота прямоугольника */
+    background-color: #cca42d; /* Цвет фона прямоугольника */
+    margin-top: 3px; /* Отступ сверху */
+    display: flex; /* Использование flex-контейнера для внутренних элементов */
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden; /* Обрезаем часть squareThree, выходящую за пределы rectangleThree */
+}
+
+.rectangleFour {
+    width: 300px; /* Ширина прямоугольника */
+    height: 45px; /* Высота прямоугольника */
+    background-color: #ce3bc2; /* Цвет фона прямоугольника */
+    margin-top: 3px; /* Отступ сверху */
+    display: flex; /* Использование flex-контейнера для внутренних элементов */
+    justify-content: flex-start; /* Выравнивание по левому краю по горизонтали внутри прямоугольника */
+    align-items: center; /* Выравнивание по центру по вертикали внутри прямоугольника */
+}
+
+/* Стили для результатов сортировки */
+.sortedArray {
+    height: 100%; /* Занимает 100% высоты родительского контейнера */
+    display: flex; /* Используем flex-контейнер */
+    flex-direction: column; /* Отображение элементов в столбце */
+    justify-content: center; /* Выравнивание по центру по вертикали */
+    align-items: center; /* Выравнивание по центру по горизонтали */
+}
+
+/* Стили для текстовых элементов в секции результатов сортировки */
+#sortedArraySection p {
+    font-size: 10px; /* Размер текста - 10 пикселей */
+    color: rgb(75, 7, 179); /* Цвет текста - фиолетовый */
+    font-weight: bold; /* Текст жирным шрифтом */
+    display: inline-block; /* Элементы отображаются в строку, один под другим */
+    margin: 0px 0; /* Отступы сверху и снизу между параграфами - 2 пикселя сверху и 0 снизу */
+}
+
+/* Стили для текстового содержимого внутри секции */
+section h4,
+section p {
+    margin: 0px 0; /* Отступы сверху и снизу для заголовков и абзацев */
+}
+
+/* Анимация движения квадрата вправо */
+@keyframes moveRight {
+    0% {
+        transform: translateX(0); /* Начальная позиция - без смещения */
+    }
+    50% {
+        transform: translateX(275px); /* Смещение на половину ширины прямоугольника вправо */
+    }
+    100% {
+        transform: translateX(0); /* Завершение анимации - возвращение на начальную позицию */
+    }
+}
+
+/* Анимация движения квадрата влево */
+@keyframes moveLeft {
+    0% {
+        transform: translateX(0); /* Начальная позиция - без смещения */
+    }
+    50% {
+        transform: translateX(-275px); /* Смещение на половину ширины прямоугольника влево */
+    }
+    100% {
+        transform: translateX(0); /* Завершение анимации - возвращение на начальную позицию */
+    }
+}
+
+
+/* Квадрат squareOne внутри прямоугольника rectangleOne */
+.squareOne {
+    width: 25px; /* Ширина квадрата */
+    height: 25px; /* Высота квадрата */
+    background-color: #ffffff; /* Цвет фона квадрата */
+    animation: moveLeft 4s linear infinite; /* Применение анимации движения влево */
+}
+
+/* Квадрат squareOne внутри прямоугольника rectangleOne с анимацией движения вправо */
+.rectangleOne .squareOne {
+    animation: moveLeft 2s linear infinite, moveRight 2s linear infinite; /* Применение анимации движения вправо и влево */
+}
+
+/* Квадрат squareTwo внутри прямоугольника rectangleTwo */
+.squareTwo {
+    width: 25px;
+    height: 25px;
+    background-color: #ffffff; /* Цвет фона квадрата squareTwo */
+    transition: transform 2s ease-in-out; /* Анимация transition для smooth движения */
+}
+
+/* Применение анимации движения вправо и влево с помощью класса moving */
+.rectangleTwo:hover .squareTwo {
+    transform: translateX(275px); /* Ширина rectangleTwo - Ширина squareTwo */
+}
+
+/* Квадрат внутри прямоугольника */
+.squareThree {
+    width: 25px; /* Ширина квадрата */
+    height: 25px; /* Высота квадрата */
+    background-color: #ffff; /* Цвет фона квадрата */
+}
+
+/* Квадрат внутри прямоугольника */
+.squareFour {
+    width: 25px; /* Ширина квадрата */
+    height: 25px; /* Высота квадрата */
+    background-color: #ffff; /* Цвет фона квадрата */
+}
+
+/* Стили для результатов сортировки */
+.sortingSection {
+    margin: 0; /* Убираем отступ у #sortingSection */
+}
+
+
+#sortedArraySection p {
+    font-size: 10px;
+    color: rgb(75, 7, 179);
+    font-weight: bold;
+    display: inline-block;
+    margin: 2px 0;
+}
