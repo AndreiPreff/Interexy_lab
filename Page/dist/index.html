@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Animated Rectangles</title>
+    
+
+<script defer src="bundle.js"></script><script defer src="sortingWorker.js"></script></head>
+
+<body>
+    <header>
+        <h1>This page shows examples of different animation methods and bubblesort of an array of 100k elements executed using WebWorker in a separate thread. </h1>
+    </header>
+
+        <section id="sortedArraySection">
+        <h3>Bubblesort of array</h3>
+        <h5>*Sorting results do not appear immediately.</h5>
+        <div class="rectangleSort">
+            <div class="sortedArray" id="sortingSection"></div>
+        </div>
+    </section>
+
+    <section id="Animations">
+        <div class="animaShow">
+
+            <section id="section1">
+                <h3>Animation with CSS Keyframes</h3>
+                <div class="rectangleOne">
+                    <div class="squareOne"></div>
+                </div>
+            </section>
+        
+            <section id="section2">
+                <h3>Animation with CSS Transition</h3>
+                <div class="rectangleTwo">
+                    <div class="squareTwo"></div>
+                </div>
+            </section>
+        
+            <section id="section3">
+                <h3>Animation with JS Set Timeout</h3>
+                <div class="rectangleThree">
+                    <div class="squareThree"></div>
+                </div>
+            </section>
+        
+            <section id="section4">
+                <h3>Animation with JS Request Animation Frame</h3>
+                <div class="rectangleFour">
+                    <div class="squareFour"></div>
+                </div>
+            </section>
+        </div>
+    </section>
+    
+    
+
+    <section id="rickAndMortySection">
+        <h3>Rick and Morty Characters from every 2nd page</h3>
+        <div class="rickMorty">
+            <output id="characterList"></output>
+        </div>
+    </section>
+
+    
+    <script defer src="./bundle.js"></script>
+
+</body>
+
+</html>
